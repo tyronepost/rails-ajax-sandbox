@@ -1,0 +1,9 @@
+<h1>Hello#index</h1>
+
+<%= button_to 'random greeting', hello_index_path, remote: true %>
+<div>
+  <%= @name %>
+</div>
+<div id="hello">
+  <%= render 'hello', name: @name %>
+</div>
